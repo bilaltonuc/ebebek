@@ -2,20 +2,23 @@ package org.example;
 
 
     public class Employee {
+
         private String name;
         private double salary;
         private double workHours;
         private int hireYear;
 
         public Employee(String name, double salary, double workHours, int hireYear) {
+
             this.name = name;
             this.salary = salary;
             this.workHours = workHours;
             this.hireYear = hireYear;
+
         }
 
         public double tax(){
-            if (salary<0){throw new RuntimeException("Lütfen geçerli değer giriniz");}
+            if (salary<0){throw new RuntimeException("Please enter  valid value");}
             double taxPaid = (salary<1000? 0:salary*0.03);
             return taxPaid;
         }
@@ -25,7 +28,7 @@ package org.example;
             if (workHours<=40 && workHours>0){ bonusSalary=0;
             }else if (workHours>40 && workHours<=72){
                 bonusSalary=(workHours-40)*30;
-            }else{throw new RuntimeException("Lütfen hocam naptın bu kadar calısılır mı !!!");}
+            }else{throw new RuntimeException("if you do this it won't work");}
             return bonusSalary;
         }
 

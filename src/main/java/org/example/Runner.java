@@ -15,8 +15,9 @@ public class Runner {
         double salary = scan.nextDouble();
         System.out.println("write your workhour");
         double workHours = scan.nextDouble();
-        System.out.println("enter  your hireyear (as year)");
-        int hireYear = scan.nextInt(); // SADECE YIL
+        System.out.println("enter  your hireyear (just year)");
+        int hireYear = scan.nextInt();
+
         Employee employee = new Employee(name, salary, workHours, hireYear);
         System.out.println(employee);
 
